@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+
+    <script type="text/javascript" src="js/codigo.js"></script>
+
+    <script>
+       document.addEventListener("load", init(), false);
+
+    </script>
+
+</head>
+<body>
+    <p>Aplicacion que pregunte la edad e mostre los años vividos</p>
+
+    <div>
+        <table>
+            <tr>
+                <td><label>Nombre: </label></td>
+                <td><input type="text" name="nombre" id="nombre"></td>
+            </tr>
+            <tr>
+                <td><label>Edad  : </label></td>
+                <td><input type="number" name="edad" id="edad"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" name="calcular" id="calcular" value="Calcular"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <span id="resultado"></span>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("calcular").addEventListener("click",calcularEdad);
+    </script>
+
+    <p>Pedir dos numero y mostrar o mayor</p>
+    <div>
+        <form action="#" name="formu1">
+            <label>Num 1 : </label><input type="number" name="num1" id="num1"><br />
+            <label>Num 2 : </label><input type="number" name="num2" id="num2"><br />
+            <input type="button" value="Calcular" onclick="calcularMayor(document.formu1.num1.value, document.formu1.num2.value)">
+        </form>
+        <h4 id="mensaje"></h4>
+    </div>
+
+    <p>Pedir frase e repetirla</p>
+    <div>
+        <form action="#" name="formu2">
+            <label>Frase   : </label><input type="text" name="frase" id="frase"><br />
+            <label>Repetir : </label><input type="number" name="num" id="num"><br />
+
+            <input type="button" value="Mostrar" onclick="mostrarFrase(document.formu2.frase.value, document.formu2.num.value)">
+        </form>
+        <h4 id="mensaje2"></h4>
+    </div>
+
+    <p>Pedir un Numero y mostrar el factorial de numero</p>
+    <div>
+        <label>Numero: </label><input type="number" name="facto" id="facto">
+        <input type="button" name="bFactor" value="Resultado" onclick="mostrarResultado()">
+
+    </div>
+    <h4 id="resFacto"></h4>
+
+<div>
+    <input type="button" value="Mostrar" onclick="Hola()">
+
+</div>
+
+</body>
+</html>
