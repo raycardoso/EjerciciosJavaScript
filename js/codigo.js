@@ -10,8 +10,8 @@ function init() {
     var var2 = "Cardoso";
     var var3 = 5/0;
 
-    alert("yo soy mas " + var1);
-    alert("Mis apellidos son " + var2 + 2);
+  //  alert("yo soy mas " + var1);
+  //  alert("Mis apellidos son " + var2 + 2);
 }
 
 function calcularEdad() {
@@ -48,17 +48,13 @@ function mostrarFrase(frase, num) {
 }
 
 function mostrarResultado() {
-    alert("Holaaaaaa");
     var num = document.getElementById("facto").value;
+  //  alert(num);
+
     var fact = 1;
-    for (var i = 0; i <= num; i++){
+    for (var i = 1; i <= num; i++){
         fact = fact * i;
     }
-    alert(fact);
     document.getElementById("resFacto").innerHTML = fact;
 }
 
-function Hola() {
-    alert("Holaaaaaa");
-
-}
